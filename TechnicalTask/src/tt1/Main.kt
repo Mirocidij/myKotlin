@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
 
     for (i in 0..line!!.length-1) {
         list.add('(')
-        for (j in 1..line.length-1) {
+        for (j in 0..line.length-1) {
             if (line[i] == line[j] && i != j) {
                 list[i] = ')'
                 break
