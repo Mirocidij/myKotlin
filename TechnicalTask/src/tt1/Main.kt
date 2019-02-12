@@ -5,9 +5,9 @@ fun main(args: Array<String>) {
     val list: ArrayList<Char> = ArrayList()
 
 
-    for (i in 0 until line!!.length) {
-        list[i] = '('
-        for (j in 0 until line.length) {
+    for (i in 0..line!!.length-1) {
+        list.add('(')
+        for (j in 1..line.length-1) {
             if (line[i] == line[j] && i != j) {
                 list[i] = ')'
                 break
